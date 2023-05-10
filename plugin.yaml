@@ -1,0 +1,9 @@
+name: "diff"
+version: "0.1.0"
+usage: "Diff the manifest between helm template and helm get manifest"
+description: "Diff the manifest between helm template and helm get manifest"
+useTunnel: true
+command: "$HELM_PLUGIN_DIR/bin/diff"
+hooks:
+  install: "$HELM_PLUGIN_DIR/install.sh"
+  update: "$HELM_PLUGIN_DIR/install.sh -u"
