@@ -5,5 +5,5 @@ description: "Diff the manifest between helm template and helm get manifest"
 useTunnel: true
 command: "$HELM_PLUGIN_DIR/bin/diff"
 hooks:
-  install: "$HELM_PLUGIN_DIR/install.sh"
-  update: "$HELM_PLUGIN_DIR/install.sh -u"
+  install: "$HELM_PLUGIN_DIR/scripts/install_plugin.sh"
+  update: "$HELM_PLUGIN_DIR/scripts/install_plugin.sh"
